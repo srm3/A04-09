@@ -190,20 +190,33 @@ La principal diferència entre XML i YAML es com representen i estructuren la in
 
 XML és més adequat quan es prioritza la validació de les dades, mentre que YAML destaca en situacions on es valora la simplicitat i la llegibilitat.
 
-| YAML                                        | XML                                         |
-|---------------------------------------------|---------------------------------------------|
-| ```yaml                                     | ```xml                                      |
-| servidor:                                   | <servidor>                                  |
-|   port: 8080                                |   <port>8080</port>                         |
-|   host: exemple.com                         |   <host>exemple.com</host>                  |
-| base_dades:                                 | </servidor>                                 |
-|   nom: principal                            | <base_dades>                                |
-|   usuari: usuari1                           |   <nom>principal</nom>                      |
-|   contrasenya: secret123                    |   <usuari>usuari1</usuari>                  |
-| ```                                         |   <contrasenya>secret123</contrasenya>      |
-|                                             | ```                                         |
+| YAML                                        | 
+|---------------------------------------------|
+```yaml
+servidor:
+  port: 8080
+  host: exemple.com
+base_dades:
+  nom: principal
+  usuari: usuari1
+  contrasenya: secret123
+```
+
+| XML                                         |
+|---------------------------------------------|
+```xml
+<servidor>
+  <port>8080</port>
+  <host>exemple.com</host>
+</servidor>
+<base_dades>
+  <nom>principal</nom>
+  <usuari>usuari1</usuari>
+  <contrasenya>secret123</contrasenya>
+</base_dades>
 
 
+```
 
 ----
 
