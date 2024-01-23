@@ -77,38 +77,135 @@ edat: !!int 25
 preu: !!float 19.99
 ```
 
+## 1.3. Exemples de diferents possibilitats del llenguatge
+
+### Configuració d'Aplicacions Web i Connexió a Bases de Dades:
+```yaml
+servidor:
+  port: 8080
+  host: exemple.cat
+base_dades:
+  nom: principal
+  usuari: usuari1
+  contrasenya: password
+```
+
+### Representació de Dades Complexes:
+```yaml
+  - nom: Joan
+    edat: 28
+    tasques:
+      - nom: Feina A
+        completat: cert
+      - nom: Feina B
+        completat: fals
+  - nom: Maria
+    edat: 24
+    tasques:
+      - nom: Feina C
+        completat: cert
+      - nom: Feina D
+        completat: cert
+```
+
+### Definició de Flujos de Treball (CI/CD) amb GitHub Actions:
+```yaml
+name: GitHub Actions Demo
+run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+on: [push]
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
+      - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
+      - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
+      - name: Check out repository code
+        uses: actions/checkout@v4
+      - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
+      - run: echo "🖥️ The workflow is now ready to test your code on the runner."
+      - name: List files in the repository
+        run: |
+          ls ${{ github.workspace }}
+      - run: echo "🍏 This job's status is ${{ job.status }}."
+```
+
+### Automatització i Orquestració amb Ansible
+```yaml
+---
+- hosts: all
+  vars:
+    storage_volumes:
+      - name: barefs
+        type: disk
+        disks:
+          - sdb
+        fs_type: xfs
+        mount_point: /mnt/data
+  roles:
+    - rhel-system-roles.storage
+```
+
+### Automatització amb Kubernetes:
+```yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: app
+  template:
+    metadata:
+      labels:
+        app: app
+    spec:
+      containers:
+      - name: app-container
+        image: app-image:latest
+        ports:
+        - containerPort: 80
+```
+
+Un exemple de la documentació de Google [App Engine].
+
+## 1.4. Validació dels exemples
+
+Per realitzar la validació d'un fitxer YAML faria servir un eina local si es tractés de dades sensibles com poden ser contrasenyes en text clar o detalls de la base de dades. En aquest cas farem servir yamllint. Tenim altres opcions local com podria ser visual studio amb la seva extensió corresponent.
+
+Cal mencionar que podem fer servir alguna utilitat web, sense poder garantir les nostres dades: [Yamllint en versió web].
+
+Tot i que hi han eines per validar haurem de seguir la documentació sempre que es tracti de configuracions o definició d’estructures, el nostre fitxer por estar ven redactat de cara a un validador pero si la aplicació espera un altra cosa mai funcionara.
+YAMLlint funciona de la següent manera:
+Examina l’arxiu YAML per assegurar-se que compleix amb la sintaxi i estructures correctes segons les especificacions de YAML. Verifica que la indentació, els dos punts (per separar claus) i els valors estiguin correctes.
+A part de la sintaxis, YAMLlint també es preocupa per l’estil del codi YAML. Avalua si l'arxiu segueix convencions d’estil com: l’ús de cometes al voltant de les cadenes, l'alineació de les estructures i altres aspectes que poden afectar la llegibilitat i consistència del codi YAML.
+Identifica possibles errors o problemes en l’arxiu YAML que podrien provocar comportaments inesperats o errors d’interpretació: claus duplicades, valors no vàlids…
+Proporciona missatges d’error informatius i suggerències de com corregir-ho. 
+
+## 1.5. Comparació amb XML / DTD - XSD
+
+La principal diferència entre XML i YAML es com representen i estructuren la informació. XML utilitza una sintaxi més detallada amb etiquetes d'obertura i tancament, sovint acompanyada de sistemes de validació. En canvi, YAML utilitza una sintaxi més senzilla i llegible, eliminant la necessitat d'etiquetes addicionals i sense requerir validacions tan formals. La elecció depèn de les preferències específiques: 
+
+XML és més adequat quan es prioritza la validació de les dades, mentre que YAML destaca en situacions on es valora la simplicitat i la llegibilitat.
+
+| YAML                                        | XML                                         |
+|---------------------------------------------|---------------------------------------------|
+| ```yaml                                     | ```xml                                      |
+| servidor:                                   | <servidor>                                  |
+|   port: 8080                                |   <port>8080</port>                         |
+|   host: exemple.com                         |   <host>exemple.com</host>                  |
+| base_dades:                                 | </servidor>                                 |
+|   nom: principal                            | <base_dades>                                |
+|   usuari: usuari1                           |   <nom>principal</nom>                      |
+|   contrasenya: secret123                    |   <usuari>usuari1</usuari>                  |
+| ```                                         |   <contrasenya>secret123</contrasenya>      |
+|                                             | ```                                         |
 
 
-
-
-
-This is a *bare-minimum* template to create a Jekyll site that uses the [Just the Docs] theme. You can easily set the created site to be published on [GitHub Pages] – the [README] file explains how to do that, along with other details.
-
-If [Jekyll] is installed on your computer, you can also build and preview the created site *locally*. This lets you test changes before committing them, and avoids waiting for GitHub Pages.[^1] And you will be able to deploy your local build to a different platform than GitHub Pages.
-
-More specifically, the created site:
-
-- uses a gem-based approach, i.e. uses a `Gemfile` and loads the `just-the-docs` gem
-- uses the [GitHub Pages / Actions workflow] to build and publish the site on GitHub Pages
-
-Other than that, you're free to customize sites that you create with this template, however you like. You can easily change the versions of `just-the-docs` and Jekyll it uses, as well as adding further plugins.
-
-[Browse our documentation][Just the Docs] to learn more about how to use this theme.
-
-To get started with creating a site, simply:
-
-1. click "[use this template]" to create a GitHub repository
-2. go to Settings > Pages > Build and deployment > Source, and select GitHub Actions
-
-If you want to maintain your docs in the `docs` directory of an existing project repo, see [Hosting your docs from an existing project repo](https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md#hosting-your-docs-from-an-existing-project-repo) in the template README.
 
 ----
 
-[^1]: [It can take up to 10 minutes for changes to your site to publish after you push the changes to GitHub](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll#creating-your-site).
-
-[Just the Docs]: https://just-the-docs.github.io/just-the-docs/
-[GitHub Pages]: https://docs.github.com/en/pages
-[README]: https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md
-[Jekyll]: https://jekyllrb.com
-[GitHub Pages / Actions workflow]: https://github.blog/changelog/2022-07-27-github-pages-custom-github-actions-workflows-beta/
-[use this template]: https://github.com/just-the-docs/just-the-docs-template/generate
+[App Engine]:https://cloud.google.com/appengine/docs/standard/go111/config/appref?hl=es-419
+[Yamllint en versió web]:https://www.yamllint.com/
