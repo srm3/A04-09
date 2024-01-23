@@ -306,20 +306,80 @@ Text[^1]
 
 Markdown no utilitza tipus de dades específics, ja que el seu enfoc és donar format al text de manera estructurada. 
 
+## 2.3. Exemples
 
+Markdown es un llenguatge molt versàtil, el podem fer servir per infinitat de projectes, sent un llenguatge orientat a la web no és estrany espera poder fer pàgines web amb ell. Podem trobar moltes aplicacions, com podria ser [github pages].
 
+Ens va semblar més interessant fer aquest treball utilitzant alguna d’aquestes tecnologies esmentades. Hem escollit fer servir github pages amb [Jekyll] , aprofintant l'ús de github actions per automatitzar el procés de sincronització .
 
+Un cop hem configurat el repositori amb l'índex.md, la plantilla web está configurada, es realitza el següent procés de manera automática:
 
+![ImagenFlujo](https://mdg.imgix.net/assets/images/markdown-flowchart.png?auto=format&fit=clip&q=40&w=1080)
 
+## 2.4. Validació del exemples
 
+Podem fer servir alguna utilitat per crear y visualitzar en temps real. Aquí tenim un exemple: [Dillinger]
 
+Tenint en compte que es un llenguatge per crear “Documents” no hem de validar la informació però hem de revisar que les dades segueixin l’estructura adient i es representin correctament.
 
+Més enllà d’aquestes petites comprovacions no cal fer res mes, ja que les dades es tracten de text i no son tan criticas com podrien ser en un xml o un json.
 
+## 2.5. Comparació amb XML / DTD - XSD
 
+La sintaxi Markdown està dissenyada per crear documents de text sense format amb format bàsic. En canvi, XML/DTD - XSD utilitza una sintaxi més rica i estructurada, la definició de la qual proporciona regles més estrictes per a la validació de jerarquies i tipus de dades. La seva finalitat també és diferent, XML/DTD i XSD s'utilitzen principalment per a la representació de dades estructurades i l'intercanvi d'informació entre sistemes i la finalitat de Markdown és crear text sense format amb format bàsic, com ara README o documentació en línia. Estructuralment, Markdown conté elements com ara títols, llistes, enllaços i format de text, però la seva estructura és relativament plana. Tanmateix, l'estructura d'XML/DTD i XSD proporciona jerarquies més complexes, amb nodes, atributs i la possibilitat de definir-se mitjançant DTD o esquemes XSD detallats.
 
+És a dir, Markdown és adequat per crear documents senzills i llegibles, i XML/DTD i XSD són més adequats per representar i intercanviar dades estructurades amb mètodes més rigorosos i una validació més precisa.
 
+### Markdown
+
+```markdown
+### Configuración del Servidor
+
+- **Puerto:** 8080
+- **Host:** ejemplo.com
+
+### Base de Datos
+
+- **Nombre:** principal
+- **Usuario:** usuario1
+- **Contraseña:** secret123
+```
+
+### XML
+
+```xml
+<servidor>
+  <port>8080</port>
+  <host>exemple.com</host>
+</servidor>
+<base_dades>
+  <nom>principal</nom>
+  <usuari>usuari1</usuari>
+  <contrasenya>secret123</contrasenya>
+</base_dades>
+```
+# [Bibliografia / Webgrafia](#Bibliografia / Webgrafia)
+
+1. "The Difference Between YAML and JSON" - AWS. “https://aws.amazon.com/es/compare/the-difference-between-yaml-and-json/”
+
+2.  "YAML 1.2 Specification" - YAML “https://yaml.org/spec/1.2.2/”.
+
+3.  "What is YAML?" - Red Hat “https://www.redhat.com/es/topics/automation/what-is-yaml#:~:text=Los%20usos%20de%20YAML,la%20mayoría%20de%20los%20casos”.
+
+4.  "Usos e Integración de YAML en el Desarrollo Moderno" - Tecnoyfoto  “[https://tecnoyfoto.com/usos-e-integracion-de-yaml-en-el-desarrollo-moderno](https://tecnoyfoto.com/usos-e-integracion-de-yaml-en-el-desarrollo-moderno)”
+
+5.  "Basic Syntax" - Markdown Guide. “https://www.markdownguide.org/basic-syntax/”.
+
+6.  "Markdown: Syntax" - Daring Fireball. “https://daringfireball.net/projects/markdown/”.
+
+7.  "Getting Started" - Markdown Guide. “https://www.markdownguide.org/getting-started/”.
+
+8.  "Basic writing and formatting syntax" - GitHub Docs (en español). “https://docs.github.com/es/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax”
 
 ----
 
 [App Engine]:https://cloud.google.com/appengine/docs/standard/go111/config/appref?hl=es-419
 [Yamllint en versió web]:https://www.yamllint.com/
+[github pages]:(https://pages.github.com/)
+[Jekyll]:(https://www.markdownguide.org/tools/jekyll/)
+[Dillinger]:(https://dillinger.io/)
