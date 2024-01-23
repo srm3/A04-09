@@ -190,8 +190,8 @@ La principal diferència entre XML i YAML es com representen i estructuren la in
 
 XML és més adequat quan es prioritza la validació de les dades, mentre que YAML destaca en situacions on es valora la simplicitat i la llegibilitat.
 
-| YAML                                        | 
-|---------------------------------------------|
+## YAML                                        
+
 ```yaml
 servidor:
   port: 8080
@@ -202,8 +202,8 @@ base_dades:
   contrasenya: secret123
 ```
 
-| XML                                         |
-|---------------------------------------------|
+## XML
+
 ```xml
 <servidor>
   <port>8080</port>
