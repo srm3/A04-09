@@ -1,9 +1,9 @@
 ---
-title: Home
-layout: home
+title: YAML
+layout: #yaml
 ---
 
-# YAML
+# [YAML](#yaml)
 
 ## 1.1. Descripció del llenguatge
 
