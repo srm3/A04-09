@@ -214,6 +214,8 @@ base_dades:
   <usuari>usuari1</usuari>
   <contrasenya>secret123</contrasenya>
 </base_dades>
+```
+
 # Markdown
 
 ## 1.1. Descripció del llenguatge
@@ -258,7 +260,7 @@ etiquetes.
 Encapçalaments: S’utilitzen per estructurar el contingut. Quan més alt és el número de 
 l’encapçalament, més petit serà.
 
-```
+
 
 ----
 
