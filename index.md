@@ -262,6 +262,51 @@ Llistes: Facilita la creació de llistes ordenades i no ordenades per organitzar
     2. Subelement B
 ```
 
+Enllaços: Permet incluir enllaços a llocs web i altres recursos.
+```markdown
+[Text de l'enllaç](URL)
+```
+
+Imatges: Permet inserir imatges en el document.
+```markdown
+![Text alternatiu](URL de la imatge)
+```
+
+Cites: Facilita la inclusió de cites per resaltar o referenciar el text.
+```markdown
+> Això és una cita.
+```
+
+Codi en línia i Blocs de codi: Permet incluir fragments de codi en el text, ja sigui en línia o en blocs.
+```markdown
+`Codi en línia`
+  ```python
+  # Bloc de codi amb Python
+  print("Hola a tothom!")
+```
+
+Línies horitzontals: crea línias horitzontals per separar seccions en el document.
+```markdown
+—--------
+```
+
+Taules: Permet crear taules per organitzar dades de manera tabular.
+```markdown
+| Encapçalament 1 | Encapçalament 2 |
+|-----------------|-----------------|
+|   Cel·la 1,1    |   Cel·la 1,2    |
+|   Cel·la 2,1    |   Cel·la 2,2    |
+```
+
+Notes al peu de pàgina: Facilita la inclusió de notes al peu de pàgina per proporcionar informació addicional. 
+```markdown
+Text[^1]
+[^1]: Nota al peu de pàgina.
+```
+
+Markdown no utilitza tipus de dades específics, ja que el seu enfoc és donar format al text de manera estructurada. 
+
+
 
 
 
