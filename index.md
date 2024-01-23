@@ -1,5 +1,5 @@
 ---
-title: YAML
+title: Pràctica YAML Markdown
 layout: home
 ---
 
