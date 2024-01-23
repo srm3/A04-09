@@ -1,6 +1,6 @@
 ---
 title: YAML
-layout: #yaml
+layout: yaml
 ---
 
 # [YAML](#yaml)
