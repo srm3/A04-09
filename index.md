@@ -1,3 +1,4 @@
+
 ---
 title: Pràctica YAML Markdown
 layout: home
@@ -214,9 +215,64 @@ base_dades:
   <usuari>usuari1</usuari>
   <contrasenya>secret123</contrasenya>
 </base_dades>
-
-
 ```
+# [Markdown](#markdown)
+
+## 1.1. Descripció del llenguatge
+
+Markdown és un llenguatge de marques lleuger que s'utilitza habitualment per formatar el text de manera fàcil i ràpida. John Gruber i Aaron Swartz el van crear l'any 2004 com a llenguatge de marques amb l'objectiu principal de ser fàcil de llegir i escriure sense requerir l'ús d'eines complexes. Amb aquest objectiu en ment, també pretenc permetre que la gent escrigui en un format de text que sigui fàcil de llegir, fàcil d'escriure i convertir documents en HTML vàlid.
+
+Markdown es va inspirar en llenguatges preexistents com setext (1992), Textile (2002) i reStructuredTest (2002).
+
+## Usos més habituals
+
+Markdown s'utilitza àmpliament per escriure documents tècnics i d'altres tipus on l'estructura i la llegibilitat són importants. Moltes plataformes i fòrums de blocs admeten l'escriptura a Markdown, cosa que permet als usuaris formatar fàcilment les seves publicacions. Alguns clients de correu electrònic us permeten utilitzar Markdown per formatar text i crear ràpidament llistes per redactar correus electrònics. Els desenvolupadors utilitzen Markdown per escriure fitxers README als dipòsits de codi font en plataformes com GitHub.
+
+  
+
+## Àmbit
+
+Markdown s’utilitza per a moltes coses, des del desenvolupament de programari fins a la creació de contingut en línia. Les plataformes de col·laboració i comunicació com Discord admeten l'escriptura en Markdown per facilitar la creació de missatges amb format. La seva senzillesa i versatilitat el fan adequat per a qualsevol situació en què necessiteu formatar text de manera ràpida i senzilla. A més, moltes plataformes de blocs i sistemes de gestió de contingut (CMS) (com WordPress i Ghost) admeten l'escriptura a Markdown, proporcionant una manera més eficient d'escriure contingut.
+
+# 2.2. Possibilitats
+
+Com hem vist a l’apartat 2.1, Markdown és un llenguatge de marcat lleuger que utilitza una sintaxi senzilla per donar format al text d’una manera ràpida i fàcil. Ara es detallen les principals possibilitats de Markdown, incloent el seu funcionament i etiquetes.
+
+Encapçalaments: S’utilitzen per estructurar el contingut. Quan més alt és el número de l’encapçalament, més petit serà.
+
+```markdown
+# Ejemplo 1  
+## Ejemplo 2  
+### Ejemplo 3
+```
+
+Text en negreta i cursiva: Permet resaltar el text utilitzant negreta o cursiva segons la sintaxi utilitzada.
+
+```markdown
+**Text en negreta**  
+*Text en cursiva*
+```
+
+Llistes: Facilita la creació de llistes ordenades i no ordenades per organitzar la informació.
+```markdown
+-   Element 1
+    
+-   Element 2  
+    1. Subelement A  
+    2. Subelement B
+```
+
+
+
+
+
+
+
+
+
+
+
+
 
 ----
 
