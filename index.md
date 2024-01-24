@@ -381,31 +381,36 @@ més rigorosos i una validació més precisa.
 ### Markdown
 
 ```markdown
-### Configuración del Servidor
+## Títol secundari
 
-- **Puerto:** 8080
-- **Host:** ejemplo.com
-
-### Base de Datos
-
-- **Nombre:** principal
-- **Usuario:** usuario1
-- **Contraseña:** secret123
+- Element 1
+- Element 2
+  - Subelement 2.1
+  - Subelement 2.2
+- Element 3
 ```
 
 ### XML
 
 ```xml
-<servidor>
-  <port>8080</port>
-  <host>exemple.com</host>
-</servidor>
-<base_dades>
-  <nom>principal</nom>
-  <usuari>usuari1</usuari>
-  <contrasenya>secret123</contrasenya>
-</base_dades>
+<document>
+  <title>Títol secundari</title>
+  <list>
+    <item>Element 1</item>
+    <item>Element 2
+      <list>
+        <item>Subelement 2.1</item>
+        <item>Subelement 2.2</item>
+      </list>
+    </item>
+    <item>Element 3</item>
+  </list>
+</document>
 ```
+<font color="red">**IMPORTANT:** Xml no te format de text, hauriem de fer servir XSLT per transformarlo.</font>
+
+
+
 # [Bibliografia / Webgrafia](#Bibliografia / Webgrafia)
 1. **The Difference Between YAML and JSON** - AWS
    - [Enlace](https://aws.amazon.com/es/compare/the-difference-between-yaml-and-json/)
