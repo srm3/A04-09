@@ -406,6 +406,32 @@ més rigorosos i una validació més precisa.
   <contrasenya>secret123</contrasenya>
 </base_dades>
 ```
+# [Bibliografia / Webgrafia](#Bibliografia / Webgrafia)
+1. **The Difference Between YAML and JSON** - AWS
+   - [Enlace](https://aws.amazon.com/es/compare/the-difference-between-yaml-and-json/)
+
+2. **YAML 1.2 Specification** - YAML
+   - [Enllaç](https://yaml.org/spec/1.2.2/)
+
+3. **What is YAML?** - Red Hat
+   - [Enllaç](https://www.redhat.com/es/topics/automation/what-is-yaml#:~:text=Los%20usos%20de%20YAML,la%20mayor%C3%ADa%20de%20los%20casos)
+
+4. **Usos e Integración de YAML en el Desarrollo Moderno** - Tecnoyfoto
+   - [Enllaç](https://tecnoyfoto.com/usos-e-integracion-de-yaml-en-el-desarrollo-moderno)
+
+5. **Basic Syntax** - Markdown Guide
+   - [Enllaç](https://www.markdownguide.org/basic-syntax/)
+
+6. **Markdown: Syntax** - Daring Fireball
+   - [Enllaç](https://daringfireball.net/projects/markdown/)
+
+7. **Getting Started** - Markdown Guide
+   - [Enllaç](https://www.markdownguide.org/getting-started/)
+
+8. **Basic writing and formatting syntax** - GitHub Docs (en español)
+   - [Enllaç](https://docs.github.com/es/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+
+
 
 
 ----
